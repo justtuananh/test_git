@@ -1,0 +1,26 @@
+.container .row .search-box {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 40px;
+    position: relative;
+}
+
+.search-box input {
+    border: 1px solid ;
+    border-radius: 3px;
+    font-size: 12px;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin-top: 3px;
+}
+.container .row .search-box button {
+    background-color: transparent;
+    border: 0 none;
+    color: #000;
+    height: 48px;
+    margin-left: -35px;
+    position: absolute;
+    width: 35px;
+}
