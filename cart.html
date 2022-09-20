@@ -429,15 +429,17 @@
         </header>
         <!-- header area end -->
         <!-- cart item area start -->
+
+        <div class="product-banner">
+            <img src="img/product/banner.jpg" alt="">
+        </div>
+
         <div class="shopping-cart">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="location">
-                            <ul>
-                                <li><a href="index.html" title="go to homepage">Home<span>/</span></a>  </li>
-                                <li><strong> Shopping cart</strong></li>
-                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -448,12 +450,11 @@
                                 <thead>
                                     <tr>
                                         <th class="cart-item-img"></th>
-                                        <th class="cart-product-name">Product Name</th>
-                                        <th class="edit"></th>
-                                        <th class="move-wishlist">Move to Wishlist</th>
-                                        <th class="unit-price">Unit Price</th>
-                                        <th class="quantity">Qty</th>
-                                        <th class="subtotal">Subtotal</th>
+                                        <th class="cart-product-name">Tên Sản Phẩm</th>
+                                        <th class="move-wishlist">Danh mục yêu thích</th>
+                                        <th class="unit-price">Đơn giá</th>
+                                        <th class="quantity">Số lượng</th>
+                                        <th class="subtotal">Tổng </th>
                                         <th class="remove-icon"></th>
                                     </tr>
                                 </thead>
@@ -467,20 +468,21 @@
                                         <td class="cart-product-name">
                                             <a href="single-product.html">Cras neque metus</a>
                                         </td>
-                                        <td class="edit">
-                                            <a href="#">Edit</a>
-                                        </td>
+
                                         <td class="move-wishlist">
-                                            <a href="#">Move</a>
+                                            <a href="#">Thêm</a>
                                         </td>
                                         <td class="unit-price">
-                                            <span>$174.00</span>
+                                            <span>1,000,000 VNĐ</span>
                                         </td>
                                         <td class="quantity">
+                                            <button type="button" class="btn btn-light">-</button>
                                             <span>1</span>
+                                            <button type="button" class="btn btn-light">+</button>
+
                                         </td>
                                         <td class="subtotal">
-                                            <span>$174.00</span>
+                                            <span>1,000,000 VNĐ</span>
                                         </td>
                                         <td class="remove-icon">
                                             <a href="#">
@@ -497,20 +499,20 @@
                                         <td class="cart-product-name">
                                             <a href="single-product.html">Cras neque metus</a>
                                         </td>
-                                        <td class="edit">
-                                            <a href="#">Edit</a>
-                                        </td>
+
                                         <td class="move-wishlist">
-                                            <a href="#">Move</a>
+                                            <a href="#">Thêm</a>
                                         </td>
                                         <td class="unit-price">
-                                            <span>$174.00</span>
+                                            <span>1,000,000 VNĐ</span>
                                         </td>
                                         <td class="quantity">
+                                            <button type="button" class="btn btn-light">-</button>
                                             <span>1</span>
+                                            <button type="button" class="btn btn-light">+</button>
                                         </td>
                                         <td class="subtotal">
-                                            <span>$174.00</span>
+                                            <span>1,000,000 VNĐ</span>
                                         </td>
                                         <td class="remove-icon">
                                             <a href="#">
@@ -527,20 +529,20 @@
                                         <td class="cart-product-name">
                                             <a href="single-product.html">Cras neque metus</a>
                                         </td>
-                                        <td class="edit">
-                                            <a href="#">Edit</a>
-                                        </td>
+
                                         <td class="move-wishlist">
-                                            <a href="#">Move</a>
+                                            <a href="#">Thêm</a>
                                         </td>
                                         <td class="unit-price">
-                                            <span>$275.00</span>
+                                            <span>1,000,000 VNĐ</span>
                                         </td>
                                         <td class="quantity">
+                                            <button type="button" class="btn btn-light">-</button>
                                             <span>2</span>
+                                            <button type="button" class="btn btn-light">+</button>
                                         </td>
                                         <td class="subtotal">
-                                            <span>$350.00</span>
+                                            <span>2,000,000 VNĐ</span>
                                         </td>
                                         <td class="remove-icon">
                                             <a href="#">
@@ -552,11 +554,10 @@
                             </table>
                             <div class="shopping-button">
                                 <div class="continue-shopping">
-                                    <button type="submit">continue shopping</button>
+                                    <button type="submit">Tiếp tục mua sắm</button>
                                 </div>
                                 <div class="shopping-cart-left">
-                                    <button type="submit">Clear Shopping Cart</button>
-                                    <button type="submit">Update Shopping Cart</button>
+                                    <button type="submit">Làm sạch giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
@@ -565,86 +566,82 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="discount-code">
-                            <h3>Discount Codes</h3>
-                            <p>Enter your coupon code if you have one.</p>
+                            <h3>MÃ GIẢM GIÁ</h3>
+                            <p>Nhập mã giảm giá:</p>
                             <input type="text">
                             <div class="shopping-button">
-                                <button type="submit">apply coupon</button>
+                                <button type="submit">Áp dụng</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="estimate-shipping">
-                            <h3>Estimate Shipping and Tax</h3>
-                            <p>Enter your destination to get a shipping estimate.</p>
+                            <h3>ĐỊA CHỈ GIAO HÀNG</h3>
+                            <p>Xác nhận địa điểm giao hàng!</p>
                             <form action="#">
                                 <div class="form-box">
                                     <div class="form-name">
-                                        <label> country <em>*</em> </label>
+                                        <label>TỈNH/THÀNH PHỐ<em>*</em> </label>
                                         <select>
-                                            <option value="1">Afghanistan</option>
-                                            <option value="1">Algeria</option>
-                                            <option value="1">American Samoa</option>
-                                            <option value="1">Australia</option>
-                                            <option value="1">Bangladesh</option>
-                                            <option value="1">Belgium</option>
-                                            <option value="1">Bosnia and Herzegovina</option>
-                                            <option value="1">Chile</option>
-                                            <option value="1">China</option>
-                                            <option value="1">Egypt</option>
-                                            <option value="1">Finland</option>
-                                            <option value="1">France</option>
-                                            <option value="1">United State</option>
+                                            <option value="1">Hà Nội</option>
+                                            <option value="1">Bắc Giang</option>
+                                            <option value="1">Thái Nguyên</option>
+                                            <option value="1">Vĩnh Phúc</option>
+                                            <option value="1">Thái Bình</option>
+                                            <option value="1">Quảng Ninh</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-box">
                                     <div class="form-name">
-                                        <label> State/Province </label>
+                                        <label>QUẬN/HUYỆN</label>
                                         <select>
-                                            <option value="1">Please select region, state or province</option>
-                                            <option value="1">Arizona</option>
-                                            <option value="1">Armed Forces Africa</option>
-                                            <option value="1">California</option>
-                                            <option value="1">Florida</option>
-                                            <option value="1">Indiana</option>
-                                            <option value="1">Marshall Islands</option>
-                                            <option value="1">Minnesota</option>
-                                            <option value="1">New Mexico</option>
-                                            <option value="1">Utah</option>
-                                            <option value="1">Virgin Islands</option>
-                                            <option value="1">West Virginia</option>
-                                            <option value="1">Wyoming</option>
+                                            <option value="1">Lục Nam</option>
+                                            <option value="1">Lục Ngạn</option>
+                                            <option value="1">Việt Yên</option>
+                                            <option value="1">Tân Yên</option>
+                                            <option value="1">Thành Phố Bắc Giang</option>
+                                            <option value="1">Lạng Giang</option>
+                                            
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-box">
                                     <div class="form-name">
-                                        <label> Zip/Postal Code </label>
+                                        <label>ĐỊA CHỈ CHI TIẾT</label>
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="shopping-button">
-                                    <button type="submit">get a quote</button>
+                                    <button type="submit">XÁC NHẬN</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="totals">
-                            <p>subtotal <span>$1,540.00</span> </p>
-                            <h3>Grand Total <span>$1,540.00</span></h3>
+                            <p>Phí vận chuyển <span>30,000 VNĐ</span> </p>
+                            <h3>THÀNH TIỀN<span>4,030,000 VNĐ</span></h3>
                             <div class="shopping-button">
-                                <button type="submit">proceed to checkout</button>
+                                <button type="submit">ĐẶT HÀNG NGAY</button>
                             </div>
-                            <a href="#">Checkout with Multiple Addresses</a>
+                            <a>Thanh toán sau khi nhận hàng!!</a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- cart item area end -->
         <!-- footer top area start -->
+
+
+
+
+
+
+
+        <!-- ĐOẠN NÀY LÀ FOOTER,TẤT CẢ ĐỀU GIỐNG NHUA. TUẤN ANH ĐI MÀ SỬA FOOTER VỚI HEADER :V-->
         <div class="footer-top-area">
             <div class="container">
                 <div class="row">
@@ -740,6 +737,19 @@
                 </div>
             </div>
         </div>
+<!-- CÁC ĐOẠN TRÊN LÀ HEADER,TRANG NÀO CŨNG CÓ,TUẤN ANH ĐI MÀ SỬA :V -->
+
+
+<div class="product-banner">
+    <img src="img/product/banner.jpg" alt="">
+</div>
+
+
+
+
+
+
+
         <!-- footer top area end -->
         <!-- footer area start -->
         <footer class="footer-area">
