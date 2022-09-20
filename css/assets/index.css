@@ -24,3 +24,23 @@
     position: absolute;
     width: 35px;
 }
+
+.sell-heading p{
+    font-size: 20px;
+    text-align: justify;
+}
+.sell-heading h2{
+    
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+.sell-heading p:hover{
+    font-size: 20px;
+    text-align: justify;
+    color: aqua;
+}
+
+.service-info:hover{
+    font-size: 150px;
+}
